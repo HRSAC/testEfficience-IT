@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<div class="jumbotron jumbotron-fluid mt-5 ">
+    <div class="container">
+      <h1 class="display-4">Exercice de mise en pratique, Efficience IT</h1>
+      <p class="lead">
+        Bienvenue dans la seconde étape du recrutement pour le poste de développeur web symfony
+        chez Efficience IT.
+        </p>
+        <a href="{{ path('contact.index') }}" class="btn btn-dark mt-4">Page contact</a>
+    </div>
+  </div>
+  <div class="container mt-5 d-flex d-flex bd-highlight gap-5 ">
+    <ul class="list-group">
+        <li class="list-group-item text-primary ">Outils techniques nécessaires:</li>
+        <li class="list-group-item"> - PHPStorm</li>
+        <li class="list-group-item"> - Wamp</li>
+        <li class="list-group-item"> - PHP7-8</li>
+        <li class="list-group-item"> - Git</li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item text-primary ">Documentation en ligne:</li>
+        <li class="list-group-item"> - https://openclassrooms.com/fr/courses/3619856-developpez-votre-site-web-avec-leframework-symfony</li>
+        <li class="list-group-item"> - https://symfony.com/</li>
+      </ul>
+  </div>
+  <div class="container mt-5 d-flex d-flex bd-highlight">
+    <div class="card">
+        <div class="card-header text-primary">
+            Consigne:
+        </div>
+        <div class="card-body ">
+            <h5 class="card-title">
+            - Installer Symfony 5-6, et y créer une page “Fiche Contact”
+            </h5>
+            <h5 class="card-title"> 
+            - Demander des inputs (nom, prénom, mail, message) grâce à un Formulaire Symfony et à twig, et enregistrer ces
+            informations à chaque envoi
+            </h5>
+            <h5 class="card-title">
+            - Proposer dans ce formulaire, une liste déroulante proposant des départements de l’entreprise (Direction, rh, com,
+             dev, ...), préalablement enregistrée en base de données via une classe Fixture
+            </h5>
+            <h5 class="card-title">
+            - A chaque soumission de la fiche contact, générer un mail contenant les informations, et envoyer ce mail au
+            responsable du département choisi
+            </h5>
+            <h5 class="card-title">
+            - Mettre le code sur un dépôt Github
+            </h5>
+            <h5 class="card-title">
+            - Envoyer une invitation à “lacpandore”
+            </h5>
+        </div>
+      </div>
+  </div>
+  <div class="container mt-5 d-flex d-flex bd-highlight gap-5">
+    <ul class="list-group">
+        <li class="list-group-item text-primary ">Critères d’évaluation:</li>
+        <li class="list-group-item"> - Rapidité d’écriture</li>
+        <li class="list-group-item"> - Respect de standard POO</li>
+        <li class="list-group-item"> - Clarté du controller, du twig, du Form</li>
+        <li class="list-group-item"> - Fiche Contact fonctionnelle</li>
+        <li class="list-group-item"> - Respect de la consigne</li>
+        <li class="list-group-item"> - Fiche Contact fonctionnelle</li>
+      </ul>
+      
+  </div>
+  
+  
+{% endblock %}
