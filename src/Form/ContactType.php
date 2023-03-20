@@ -55,7 +55,7 @@ class ContactType extends AbstractType
                 'attr' => [
                     'class' => 'form-control',
                 ],
-                'label' => 'message',
+                'label' => 'Message',
                 'label_attr' => [
                     'class' => 'form-label'
                 ],
@@ -77,7 +77,7 @@ class ContactType extends AbstractType
                     'Ressource humaine' => 'Ressource humaine',
                     'Direction' => 'Direction',
                     'Developpement' => 'Developpement',
-                    'Comunication' => 'Comunication',
+                    'Communication' => 'Communication',
                 ],
               
             ])            
